@@ -27,9 +27,8 @@ jobs:
 
       # Installation des dépendances
       - run: npm ci
-
-      # Vérifier le formatage du code (Prettier)
-      - run: npx nx format:check
+      - run: npx nx-cloud record -- npx nx sync:check
+      - run: npx nx-cloud record -- npx nx format:check
 
       # Lancer les tâches sur TOUS les projets
       - run: npx nx run-many -t lint,test,build
