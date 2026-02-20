@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Cat } from '../../models/cat';
+import { Cat } from '@felitech/shared-types';
 import axios from 'axios';
 import { PageHeader } from '../../components/page-header';
 import { StarRating } from '../../components/star-rating';

@@ -1,7 +1,7 @@
 import { useState, SyntheticEvent, ChangeEvent } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Cat } from '../../models/cat';
+import { Cat } from '@felitech/shared-types';
 import { PageHeader } from '../../components/page-header';
 import { BUTTON_STYLE } from '../browse-cats/browse-cats.constants';
 

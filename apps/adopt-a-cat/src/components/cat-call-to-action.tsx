@@ -1,4 +1,4 @@
-import { Cat } from '../models/cat';
+import { Cat } from '@felitech/shared-types';
 
 export interface CatCallToActionProps {
   cat: Cat;

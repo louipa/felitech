@@ -1,4 +1,4 @@
-import { Cat } from '../models/cat';
+import { Cat } from '@felitech/shared-types';
 import { Link } from 'react-router-dom';
 import { CatCallToAction } from './cat-call-to-action';
 
