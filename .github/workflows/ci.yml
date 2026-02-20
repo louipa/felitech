@@ -31,7 +31,7 @@ jobs:
         uses: nrwl/nx-set-shas@v4.4.0
 
       - name: Print NX base and head SHAs
-      - run: |
+        run: |
         echo "BASE: ${{ env.NX_BASE }}"
         echo "HEAD: ${{ env.NX_HEAD }}"
 
