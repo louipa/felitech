@@ -15,7 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@felitech/shared-types": ["libs/shared-types/src/index.ts"]
+      "@felitech/shared-types": ["libs/shared-types/src/index.ts"],
+      "@felitech/ui-design-system": [
+        "libs/design-system/ui-design-system/src/index.ts"
+      ],
+      "@felitech/data-cat-api": ["libs/cat/common/data-cat-api/src/index.ts"],
+      "@felitech/data-cats": ["libs/cat/common/data-cats/src/index.ts"],
+      "@felitech/browse": ["libs/cat/browse/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
