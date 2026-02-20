@@ -35,5 +35,5 @@ jobs:
           echo "BASE: ${{ env.NX_BASE }}"
           echo "HEAD: ${{ env.NX_HEAD }}"
 
-      - name: Run Nx affected
-        run: npx nx affected -t lint,test,build
+      - run: npx nx-cloud record -- npx nx sync:check
+      - run: npx nx-cloud record -- npx nx format:check
