@@ -3,7 +3,8 @@
   "namedInputs": {
     "default": [
       "{projectRoot}/**/*",
-      "sharedGlobals"
+      "sharedGlobals",
+      "!{projectRoot}/**/README.md"
     ],
     "production": [
       "default",
