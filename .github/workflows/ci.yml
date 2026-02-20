@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 permissions:
   actions: read
@@ -19,16 +18,11 @@ jobs:
           filter: tree:0
           fetch-depth: 0
 
-      # Installation de Node.js
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v4
 
-      # Installation des dépendances
-      - run: npm ci
-      - run: npx nx-cloud record -- npx nx sync:check
-      - run: npx nx-cloud record -- npx nx format:check
+      - run: |
+        echo "BASE: ${{ env.NX_BASE }}"
+        echo "HEAD: ${{ env.NX_HEAD }}"
 
-      # Lancer les tâches sur TOUS les projets
-      - run: npx nx run-many -t lint,test,build
+      - run: npx nx affected -t lint,test,build
