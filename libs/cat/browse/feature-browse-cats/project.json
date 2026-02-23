@@ -1,0 +1,9 @@
+{
+  "name": "feature-browse-cats",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cat/browse/feature-browse-cats/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project feature-browse-cats --web",
+  "targets": {}
+}

@@ -21,7 +21,16 @@
       ],
       "@felitech/data-cat-api": ["libs/cat/common/data-cat-api/src/index.ts"],
       "@felitech/data-cats": ["libs/cat/common/data-cats/src/index.ts"],
-      "@felitech/browse": ["libs/cat/browse/src/index.ts"]
+      "@felitech/browse": ["libs/cat/browse/src/index.ts"],
+      "@felitech/feature-browse-cats": [
+        "libs/cat/browse/feature-browse-cats/src/index.ts"
+      ],
+      "@felitech/feature-single-cat": [
+        "libs/cat/browse/feature-single-cat/src/index.ts"
+      ],
+      "@felitech/feature-adopt-cat": [
+        "libs/cat/browse/feature-adopt-cat/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

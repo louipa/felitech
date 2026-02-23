@@ -1,0 +1,9 @@
+{
+  "name": "feature-adopt-cat",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/cat/browse/feature-adopt-cat/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project feature-adopt-cat --web",
+  "targets": {}
+}

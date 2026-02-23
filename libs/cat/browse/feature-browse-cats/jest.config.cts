@@ -1,10 +1,10 @@
 module.exports = {
-  displayName: 'browse',
-  preset: '../../../jest.preset.js',
+  displayName: 'feature-browse-cats',
+  preset: '../../../../jest.preset.js',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
     '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/react/babel'] }],
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../../coverage/libs/cat/browse',
+  coverageDirectory: '../../../../coverage/libs/cat/browse/feature-browse-cats',
 };
